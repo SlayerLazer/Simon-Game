@@ -44,6 +44,12 @@ $(document).on("keypress", () => {
   }
 });
 
+$(document).on("click", () => {
+  if(!gameStarted) {
+    nextSequuence();
+  }
+});
+
 function checkAnswer(indexOfLastAnswer) {
   if (
     gameSequence[indexOfLastAnswer] !== userButtonSequence[indexOfLastAnswer]
