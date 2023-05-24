@@ -44,7 +44,7 @@ $(document).on("keypress", () => {
   }
 });
 
-$("html").on("click", () => {
+$("body").on("click", () => {
   if(!gameStarted) {
     nextSequuence();
   }
