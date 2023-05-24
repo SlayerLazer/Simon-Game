@@ -39,9 +39,11 @@ $(document).ready(function () {
 });
 
 $(document).on("keypress", () => {
-  if (!gameStarted) {
-    nextSequence();
-  }
+  startGame();
+});
+
+$(document).on("click", () => {
+  startGame();
 });
 
 function checkAnswer(indexOfLastAnswer) {
@@ -69,4 +71,10 @@ function startOver() {
   userButtonSequence = [];
   gameSequence = [];
   level = 0;
+}
+
+function startGame() {
+  if (!gameStarted) {
+    nextSequence();
+  }
 }
