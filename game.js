@@ -42,7 +42,7 @@ $(document).on("keypress", () => {
   startGame();
 });
 
-$(document).on("click", () => {
+$("h1").on("click", () => {
   startGame();
 });
 
